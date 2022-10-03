@@ -1,88 +1,22 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.header-bg {
-  background-color: black;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.header-menu {
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.header-menu a {
-  color: white;
-  display: inline-block;
-  padding: 16px 0px;
-  font-size: 18px;
-  position: relative;
-}
-
-.header-menu a:after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 0px;
-  background-color: white;
-  margin-top: 4px;
-  transition: 0.3s;
-  position: absolute;
-}
-
-.header-menu a:hover::after {
-  width: 100%;
-}
-
-@media (max-width: 800px) {
-  .header-menu a {
-    background-color: #1111;
-    padding: 12px 16px;
-    border-radius: 4px;
-  }
-
-  .header-menu a:hover {
-    background-color: #2e2e2e;
-    cursor: pointer;
-  }
-
-  .header-menu {
-    gap: 20px;
-  }
-
-  .header-menu a::after {
-    display: none;
-  }
-}
-
-@media (max-width: 600px) {
-  .header-menu {
-    gap: 12px;
-  }
-  .header-menu a {
-    padding: 8px 12px;
-  }
-}
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./home/introducao.css";
+@import "./utilidades/componentes.css";
+@import "./utilidades/tipografia.css";
+@import "./utilidades/cores.css";
+@import "./bicicletas/bicicletas-lista.css";
+@import "./home/tecnologia.css";
+@import "./home/parceiros.css";
+@import "./home/depoimento.css";
+@import "./seguros/seguro.css";
+@import "./global/footer.css";
+@import "./termos/termos.css";
+@import "./bicicletas/bicicletas.css";
+@import "./seguros/vantagens.css";
+@import "./seguros/perguntas.css";
+@import "./bicicleta/bicicleta.css";
+@import "./bicicleta/bicicleta-seguro.css";
+@import "./contato/contato.css";
+@import "./contato/lojas.css";
+@import "./utilidades/formulario.css";
+@import "./orcamento/orcamento.css";

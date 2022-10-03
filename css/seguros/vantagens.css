@@ -1,0 +1,33 @@
+.vantagens-bg {
+  background: var(--cor-12);
+}
+
+.vantagens {
+  display: grid;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  gap: 60px;
+}
+
+.vantagens ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+    gap: 40px 80px;
+}
+
+.vantagens ul li {
+    display: grid;
+    gap: 8px;
+}
+
+@media (max-width: 800px) {
+  .vantagens {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 40px;
+  }
+  
+  .vantagens ul {
+    gap: 20px;
+  }
+}
