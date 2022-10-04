@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="Termos e Condições" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="../css/style.css" as="style" />
     <link rel="stylesheet" href="../css/style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,9 +41,12 @@
       </div>
       <div class="bicicleta container">
         <div class="bicicleta-imagens">
-          <img src="../img/bicicleta/nimbus3.jpg" alt="" />
-          <img src="../img/bicicleta/nimbus1.jpg" alt="" />
-          <img src="../img/bicicleta/nimbus2.jpg" alt="" />
+          <img src="../img/bicicleta/nimbus3.jpg"  width="1120"
+            height="880" alt="Bicicleta 3" />
+          <img src="../img/bicicleta/nimbus1.jpg"  width="1120"
+            height="880" alt="Bicicleta 2" />
+          <img src="../img/bicicleta/nimbus2.jpg"  width="1120"
+            height="880" alt="Bicicleta 1" />
         </div>
         <div class="bicicleta-conteudo">
           <p class="font-2-l cor-05">
@@ -51,7 +55,7 @@
             velocidade.
           </p>
           <div class="bicicleta-comprar">
-            <a class="btn" href="../orcamento.html">comprar agora</a>
+            <a class="btn" href="../orcamento.html?tipo=bikcraft&produto=nebula">comprar agora</a>
             <span class="font-1-xs cor-06"
               ><img src="../img/icones/entrega.svg" alt="" /> entrega em 5
               dias</span
@@ -114,14 +118,14 @@
       <ul>
         <li>
           <a href="./magic.html">
-            <img src="../img/bicicletas/magic.jpg" alt="Bicicleta preta" />
+            <img src="../img/bicicletas/magic.webp" alt="Bicicleta preta" />
             <h3 class="font-1-xl">Magic Might</h3>
             <span class="font-2-m cor-08">R$ 2499</span>
           </a>
         </li>
         <li>
           <a href="./nimbus.html">
-            <img src="../img/bicicletas/nimbus.jpg" alt="Bicicleta preta" />
+            <img src="../img/bicicletas/nimbus.webp" alt="Bicicleta preta" />
             <h3 class="font-1-xl">Nimbus Stark</h3>
             <span class="font-2-m cor-08">R$ 3999</span>
           </a>
@@ -129,7 +133,7 @@
       </ul>
     </article>
 
-    <article class="bicicleta-seguro-bg" >
+    <article class="bicicleta-seguro-bg">
       <div class="bicicleta-seguro container">
         <div class="bicicleta-seguro-imagem">
           <img src="../img/fotos/seguros.jpg" alt="" />
@@ -190,5 +194,6 @@
         </p>
       </div>
     </footer>
+    <script src="../js/script.js"></script>
   </body>
 </html>

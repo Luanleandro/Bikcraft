@@ -76,6 +76,10 @@
   padding-bottom: 60px;
 }
 
+.titulo {
+  background: url(../../img/dec/top-right.svg) no-repeat top right 20px;
+}
+
 .titulo > span {
   display: block;
   margin-bottom: 4px;
@@ -86,7 +90,7 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  .titulo span {
+  .titulo > span {
     font-size: 1rem;
     text-transform: lowercase;
     font-weight: 400;
