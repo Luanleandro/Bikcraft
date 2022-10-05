@@ -9,16 +9,19 @@
       content="Bicicletas elétricas de alta precisão e qualidade,  
       feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft."
     />
-    <link rel="preload" href="css/style.css" as="style" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preload" href="css/style.min.css" as="style" />
+    <link rel="stylesheet" href="css/style.min.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" href="./img/favicon.svg" type="img/svg+xml" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <title>Bikcraft - Bicicletas Elétricas</title>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
   <body>
     <header class="header-bg">
@@ -42,16 +45,18 @@
     <main class="introducao-bg">
       <div class="introducao container">
         <div class="introducao-conteudo">
-          <h1 class="font-1-xxl cor-0">
+          <h1 class="font-1-xxl cor-0 fadeInDown" data-anime="200">
             Bicicletas feitas sob medida<span class="font-1-xxl cor-p1">.</span>
           </h1>
-          <p class="font-2-l cor-05">
+          <p class="font-2-l cor-05 fadeInDown" data-anime="400">
             Bicicletas elétricas de alta precisão e qualidade, feitas sob medida
             para o cliente. Explore o mundo na sua velocidade com a Bikcraft.
           </p>
-          <a href="./bicicletas.html" class="btn">escolha a sua</a>
+          <a href="./bicicletas.html" data-anime="600" class="btn fadeInDown"
+            >escolha a sua</a
+          >
         </div>
-        <picture>
+        <picture data-anime="800" class="fadeInDown">
           <source
             media="(max-width: 800px)"
             srcset="/img/bicicletas/nimbus.webp"
@@ -353,6 +358,7 @@
         </p>
       </div>
     </footer>
+    <script src="js/plugins/simple-anime.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

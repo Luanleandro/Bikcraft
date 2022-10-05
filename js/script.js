@@ -43,3 +43,27 @@ const handleClick = (pergunta) => {
 };
 
 perguntas.forEach(handleClick);
+
+//Galeria de Bicicletas
+
+const galeria = document.querySelectorAll(".bicicleta-imagens img");
+const galeriaContainer = document.querySelector(".bicicleta-imagens");
+
+const trocarImagem = (event) => {
+  const img = event.target;
+  const media = matchMedia("(min-width: 1000px)").matches;
+  if (media) {
+    galeriaContainer.prepend(img);
+  }
+};
+
+const eventosGaleria = (img) => {
+  img.addEventListener("click", trocarImagem);
+};
+
+galeria.forEach(eventosGaleria);
+
+// animação
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}
